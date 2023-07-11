@@ -1,0 +1,29 @@
+<mvc:View controllerName="qubabynw1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+       <content>
+          <Table id="tb" items="{/Customers}">
+            <columns>
+			<Column id="custid"
+				width="12em">
+				<Text id="custidt" text="Product" />
+			</Column>
+			<Column id="custname"
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text  id="custnamet" text="Supplier" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem id="cli" vAlign="Middle">
+				<cells>
+					<Text id="custidtv" text="{CustomerID}" />
+					<Text id="custnametv" text="{CompanyName}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+          </Table>
+        </content>
+    </Page>
+</mvc:View>
