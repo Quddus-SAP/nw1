@@ -4,7 +4,6 @@
   "routes": [
     {
       "source": "^/V3/Northwind/Northwind.svc/",
-      "target": "/V3/$1",
       "destination": "QS_BABY",
       "authenticationType": "none",
       "csrfProtection": false
